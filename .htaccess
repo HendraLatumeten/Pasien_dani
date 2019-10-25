@@ -1,0 +1,52 @@
+RewriteEngine on
+
+RewriteRule ^login$ login.php [L]
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^checkuser$ data/checklogin.php [L]
+RewriteRule ^home$ index.php?active=home [L]
+RewriteRule ^agama$ index.php?active=agama [L]
+RewriteRule ^kelamin$ index.php?active=kelamin [L]
+RewriteRule ^paud$ index.php?active=paud [L]
+RewriteRule ^tk$ index.php?active=tk [L]
+RewriteRule ^kps$ index.php?active=kps [L]
+RewriteRule ^status$ index.php?active=status [L]
+RewriteRule ^wali$ index.php?active=wali [L]
+RewriteRule ^warga$ index.php?active=warga [L]
+
+RewriteRule ^alasan$ index.php?active=alasan [L]
+RewriteRule ^editalasan-(.*)$ menu/edit/editalasan.php?id=$1 [L]
+RewriteRule ^cita$ index.php?active=cita [L]
+RewriteRule ^editcita-(.*)$ menu/edit/editcita.php?id=$1 [L]
+RewriteRule ^hobi$ index.php?active=hobi [L]
+RewriteRule ^edithobi-(.*)$ menu/edit/edithobi.php?id=$1 [L]
+RewriteRule ^khusus$ index.php?active=khusus [L]
+RewriteRule ^editkhusus-(.*)$ menu/edit/editkhusus.php?id=$1 [L]
+RewriteRule ^lembaga$ index.php?active=lembaga [L]
+RewriteRule ^editlembaga-(.*)$ menu/edit/editlembaga.php?id=$1 [L]
+RewriteRule ^pekerjaan$ index.php?active=pekerjaan [L]
+RewriteRule ^editpekerjaan-(.*)$ menu/edit/editpekerjaan.php?id=$1 [L]
+RewriteRule ^penghasilan$ index.php?active=penghasilan [L]
+RewriteRule ^editpenghasilan-(.*)$ menu/edit/editpenghasilan.php?id=$1 [L]
+RewriteRule ^tempattinggal$ index.php?active=tempattinggal [L]
+RewriteRule ^edittempattinggal-(.*)$ menu/edit/edittempattinggal.php?id=$1 [L]
+RewriteRule ^transportasi$ index.php?active=transportasi [L]
+RewriteRule ^edittransportasi-(.*)$ menu/edit/edittransportasi.php?id=$1 [L]
+
+RewriteRule ^pendaftaran$ index.php?active=pendaftaran [L]
+RewriteRule ^penerimaan$ index.php?active=penerimaan [L]
+RewriteRule ^proses$ index.php?active=proses [L]
+
+RewriteRule ^lappendaftaran$ index.php?active=lappendaftaran [L]
+RewriteRule ^lappenerimaan$ index.php?active=lappenerimaan [L]
+RewriteRule ^lappenolakan$ index.php?active=lappenolakan [L]
+
+RewriteRule ^groupuser$ index.php?active=groupuser [L]
+RewriteRule ^editgroup-(.*)$ menu/edit/editgroup.php?id=$1 [L]
+RewriteRule ^user$ index.php?active=user [L]
+RewriteRule ^edituser-(.*)$ menu/edit/edituser.php?id=$1 [L]
+RewriteRule ^akses$ index.php?active=akses [L]
+
+RewriteRule ^pendaftaranpeserta$ index.php?active=pendaftaran1 [L]
+RewriteRule ^testmasuk$ index.php?active=testmasuk [L]
+
+Options All -Indexes

@@ -1,0 +1,22 @@
+<?php
+    session_start();
+    unset($_SESSION['UserId']);
+    unset($_SESSION['IdDaftar']);
+    unset($_SESSION['NamaUser']);
+    unset($_SESSION['PassUser']);
+    unset($_SESSION['NamaDepan']);
+    unset($_SESSION['NamaBelakang']);
+    unset($_SESSION['Foto']);
+    unset($_SESSION['Email']);
+    unset($_SESSION['Password']);
+    unset($_SESSION['GroupId']);
+    unset($_SESSION['NamaGroup']);
+    unset($_SESSION['KeteranganGroup']);
+    unset($_SESSION['IpAddress']);
+    unset($_SESSION['ComputerName']);
+    unset($_SESSION["SessionId"]);
+    unset($_SESSION['active']);
+    unset($_SESSION['caption']);
+    session_destroy();
+    header('location:home');
+?>
